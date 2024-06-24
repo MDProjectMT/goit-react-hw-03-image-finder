@@ -22,7 +22,12 @@ export default class Searchbar extends Component {
         >
           <button type="submit" className={styles.button}>
             <span className={styles.label}>
-              <img src="/src/" alt="Loupe" width="10" height="10" />
+              <img
+                src="/src/images/search.jpg"
+                alt="Loupe"
+                width="14"
+                height="14"
+              />
             </span>
           </button>
 

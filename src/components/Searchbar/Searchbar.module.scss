@@ -31,7 +31,7 @@
   width: 28px;
   height: 28px;
   border: 0;
-  // background-image: url('https://image.flaticon.com/icons/svg/149/149852.svg');
+  background-color: white;
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: center;
@@ -47,14 +47,10 @@
 }
 
 .label {
-  position: absolute;
-  height: 2px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  clip-path: inset(50%);
-  border: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
 }
 
 .input {
