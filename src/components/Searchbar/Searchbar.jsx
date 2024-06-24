@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import styles from './Searchbar.module.scss';
 import PropTypes from 'prop-types';
+import image from '../../images/search.jpg';
 
 export default class Searchbar extends Component {
   constructor(props) {
@@ -22,12 +23,7 @@ export default class Searchbar extends Component {
         >
           <button type="submit" className={styles.button}>
             <span className={styles.label}>
-              <img
-                src="/src/images/search.jpg"
-                alt="Loupe"
-                width="14"
-                height="14"
-              />
+              <img src={image} alt="Loupe" width="14" height="14" />
             </span>
           </button>
 
