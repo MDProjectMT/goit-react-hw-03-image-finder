@@ -2,6 +2,7 @@ import styles from './ImageGallery.module.scss';
 import ImageGalleryItem from '../ImageGalleryItem/ImageGalleryItem';
 import Modal from '../Modal/Modal';
 import { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export default class ImageGallery extends Component {
   constructor(props) {
@@ -50,3 +51,13 @@ export default class ImageGallery extends Component {
     );
   }
 }
+
+ImageGallery.propTypes = {
+  images: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+      url: PropTypes.string,
+      alt: PropTypes.string,
+    })
+  ).isRequired,
+};

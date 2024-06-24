@@ -1,4 +1,5 @@
 import styles from './Button.module.scss';
+import PropTypes from 'prop-types';
 
 const Button = ({ onClick, page, images, isLoading }) => {
   if (page === 1 && images.length === 0 && isLoading !== false) {
@@ -11,4 +12,12 @@ const Button = ({ onClick, page, images, isLoading }) => {
     </button>
   );
 };
+
+Button.propTypes = {
+  onClick: PropTypes.func.isRequired,
+  page: PropTypes.number.isRequired,
+  images: PropTypes.array.isRequired,
+  isLoading: PropTypes.bool,
+};
+
 export default Button;

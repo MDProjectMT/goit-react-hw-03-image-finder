@@ -1,4 +1,5 @@
 import styles from './Loader.module.scss';
+import PropTypes from 'prop-types';
 
 const Loader = ({ isLoading }) => {
   if (!isLoading) {
@@ -6,4 +7,9 @@ const Loader = ({ isLoading }) => {
   }
   return <span className={styles.loader}></span>;
 };
+
+Loader.propTypes = {
+  isLoading: PropTypes.bool.isRequired,
+};
+
 export default Loader;
